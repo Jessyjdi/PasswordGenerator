@@ -24,9 +24,10 @@ function writePassword() {
 // Generate the password based on the user choice from the promt.
 function generatePassword(){
   var password="";
+  var min, max;
 for(var i=0; i<passwordlength;i++){
-  var randomchar = Math.floor(Math.random() * userchoice.length); // the Math function: refernce is from the internet
-password += userchoice[randomchar];
+ var randompass = Math.floor(Math.random() * userchoice.length); // the Math function: refernce is from the internet
+ password += userchoice[randompass];
 }
 return password;
 }
